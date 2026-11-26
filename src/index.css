@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-teal: #063B42;
+  --color-warm-ivory: #F7F2E9;
+  --color-antique-gold: #D8A64E;
+  --color-antique-gold-hover: #C4923B;
+  --color-charcoal: #202B2D;
+  --color-pure-white: #FFFFFF;
+  --color-primary: #063B42;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #1F4D54;
+  --color-on-primary-container: #F7F2E9;
+  --color-secondary: #D8A64E;
+  --color-on-secondary: #202B2D;
+  --color-secondary-container: #FFEED9;
+  --color-on-secondary-container: #422C00;
+  --color-surface: #F7F2E9;
+  --color-on-surface: #202B2D;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #FAF7F1;
+  --color-surface-container: #EFE9DD;
+  --color-surface-container-high: #E7E2D9;
+  --color-on-surface-variant: #494740;
+  --color-outline: #949089;
+  --color-outline-variant: #CAC6BE;
+  --color-success: #1E6B52;
+  --color-on-success: #FFFFFF;
+  --color-warning: #9A6F1B;
+  --color-on-warning: #FFFFFF;
+  --color-error: #BA1A1A;
+  --color-on-error: #FFFFFF;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-headline: "Playfair Display", Georgia, serif;
+  --font-title: "Manrope", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-label: "Manrope", system-ui, sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, monospace;
+}
+
+.chamba-slice {
+  clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+}
+
+@media (max-width: 1023px) {
+  .chamba-slice {
+    clip-path: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

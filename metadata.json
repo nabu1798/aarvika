@@ -1,0 +1,6 @@
+{
+  "name": "AARVIKA",
+  "description": "AARVIKA — Travel · Explore · Experience. Curated Himalayan stays, Chamba heritage journeys, local experiences, and custom trip planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Planner — AARVIKA</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="36f5747f7abc35db===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-teal': '#063B42',
+        'warm-ivory': '#F7F2E9',
+        'antique-gold': '#D8A64E',
+        'antique-gold-hover': '#C4923B',
+        'charcoal': '#202B2D',
+        'pure-white': '#FFFFFF',
+        'primary': '#063B42',
+        'on-primary': '#FFFFFF',
+        'primary-container': '#1F4D54',
+        'on-primary-container': '#F7F2E9',
+        'secondary': '#D8A64E',
+        'on-secondary': '#202B2D',
+        'secondary-container': '#FFEED9',
+        'on-secondary-container': '#422C00',
+        'surface': '#F7F2E9',
+        'on-surface': '#202B2D',
+        'surface-container-lowest': '#FFFFFF',
+        'surface-container-low': '#FAF7F1',
+        'surface-container': '#EFE9DD',
+        'surface-container-high': '#E7E2D9',
+        'on-surface-variant': '#494740',
+        'outline': '#949089',
+        'outline-variant': '#CAC6BE',
+        'success': '#1E6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#9A6F1B',
+        'on-warning': '#FFFFFF',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-md': '48px',
+        'section-lg': '64px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Playfair Display"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'title': ['"Manrope"', 'sans-serif'],
+        'body': ['"Manrope"', 'sans-serif'],
+        'label': ['"Manrope"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['60px', { lineHeight: '66px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md': ['44px', { lineHeight: '50px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'headline-md': ['26px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.8px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '1.2px', fontWeight: '600' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '250ms',
+        'card-zoom': '400ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'card-zoom': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'card-zoom': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+
+  <header class="bg-deep-teal text-pure-white sticky top-0 z-30 shadow-md">
+    <div class="max-w-7xl mx-auto px-gutter-md md:px-page-margin py-gutter-md flex items-center justify-between gap-gutter-md">
+      <a href="../homepage/Homepage.html" class="inline-flex flex-col items-center" aria-label="AARVIKA Home">
+        <svg class="w-20 h-6 mb-0.5" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 32L38 14L50 22L66 4L84 21L94 15L112 32H88L66 13L48 27L38 20L20 32H10Z" fill="#D8A64E"></path>
+        </svg>
+        <span class="font-headline text-title-md tracking-widest text-pure-white leading-none">AARVIKA</span>
+        <span class="font-body text-[8px] tracking-[0.24em] text-pure-white/80 uppercase mt-0.5">TRAVEL · EXPLORE · EXPERIENCE</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-gutter-lg" aria-label="Primary navigation">
+        <a href="../explore-destinations/ExploreDestinations.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Explore</a>
+        <a href="../stays-listing/StaysListing.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Stays</a>
+        <a href="../explore-destinations/ExploreDestinations.html?tab=packages" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Packages</a>
+        <a href="../discover-chamba/DiscoverChamba.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Discover Chamba</a>
+        <a href="TripPlanner.html" aria-current="page" class="font-body text-label-lg text-antique-gold py-1 border-b-2 border-antique-gold">Plan Your Trip</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-gutter-md">
+        <a href="../sign-in/SignIn.html" class="inline-flex items-center gap-1.5 font-body text-label-lg text-pure-white hover:text-antique-gold">
+          <span class="material-symbols-outlined text-title-lg" aria-hidden="true">account_circle</span>
+          <span>Sign In</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-gutter-md md:px-page-margin py-section-md">
+    <div class="mb-gutter-xl">
+      <span class="font-body text-label-md uppercase tracking-widest text-deep-teal block mb-1">AARVIKA TRIP PLANNER</span>
+      <h1 data-design-text-token="display-md" class="font-headline text-display-md-mobile md:text-display-md text-charcoal mb-2">Design Your Custom Itinerary</h1>
+      <p class="font-body text-body-lg text-on-surface-variant">Combine stays, local experiences, and supporting mountain transport into one organised journey.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-start">
+      <!-- Builder Controls -->
+      <section class="lg:col-span-7 bg-pure-white rounded-xl p-gutter-lg shadow-md border border-outline-variant/30 space-y-gutter-lg">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-md">
+          <div>
+            <label for="trip-dest" class="font-body text-label-md text-charcoal block mb-1">Destination</label>
+            <select id="trip-dest" class="w-full rounded-md border border-outline-variant text-body-md">
+              <option>Chamba &amp; Khajjiar, HP</option>
+              <option>Srinagar &amp; Gulmarg, Kashmir</option>
+              <option>Udaipur &amp; Jodhpur, Rajasthan</option>
+              <option>Munnar &amp; Alleppey, Kerala</option>
+            </select>
+          </div>
+          <div>
+            <label for="trip-dates" class="font-body text-label-md text-charcoal block mb-1">Travel Dates</label>
+            <input id="trip-dates" type="text" value="14 Nov – 18 Nov 2026" class="w-full rounded-md border border-outline-variant text-body-md">
+          </div>
+        </div>
+
+        <div>
+          <h2 class="font-headline text-headline-sm text-charcoal mb-gutter-sm">Add to Your Itinerary</h2>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between p-gutter-md rounded-md bg-surface">
+              <div>
+                <p class="font-body text-title-md text-charcoal">Ravi Valley Heritage Timber Villa</p>
+                <p class="font-body text-body-sm text-on-surface-variant">Stay · 4 Nights · ₹8,900/night</p>
+              </div>
+              <button type="button" data-add="Stay: Ravi Valley Heritage Timber Villa (4 Nights)" class="add-item-btn rounded-full bg-deep-teal text-pure-white px-4 py-1.5 font-body text-label-md hover:bg-primary-container">Add</button>
+            </div>
+            <div class="flex items-center justify-between p-gutter-md rounded-md bg-surface">
+              <div>
+                <p class="font-body text-title-md text-charcoal">Chamba Rumal Masterclass &amp; Temple Walk</p>
+                <p class="font-body text-body-sm text-on-surface-variant">Experience · Day 2 · ₹2,100/guest</p>
+              </div>
+              <button type="button" data-add="Experience: Chamba Rumal Masterclass &amp; Temple Walk" class="add-item-btn rounded-full bg-deep-teal text-pure-white px-4 py-1.5 font-body text-label-md hover:bg-primary-container">Add</button>
+            </div>
+            <div class="flex items-center justify-between p-gutter-md rounded-md bg-surface">
+              <div>
+                <p class="font-body text-title-md text-charcoal">Pathankot / Gaggal to Chamba Mountain SUV</p>
+                <p class="font-body text-body-sm text-on-surface-variant">Supporting Transport · Private Transfer · ₹4,200</p>
+              </div>
+              <button type="button" data-add="Transport: Pathankot / Gaggal to Chamba Mountain SUV" class="add-item-btn rounded-full bg-deep-teal text-pure-white px-4 py-1.5 font-body text-label-md hover:bg-primary-container">Add</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planned Trip Summary -->
+      <aside class="lg:col-span-5 bg-deep-teal text-pure-white rounded-xl p-gutter-lg shadow-xl space-y-gutter-md">
+        <div class="flex items-center justify-between border-b border-pure-white/15 pb-gutter-sm">
+          <h2 class="font-headline text-headline-sm text-antique-gold">Your Planned Trip</h2>
+          <span class="font-body text-body-sm text-pure-white/75">4 Days</span>
+        </div>
+
+        <ul id="itinerary-list" class="space-y-2 text-body-md">
+          <li class="bg-primary-container rounded-md p-3 flex items-center justify-between gap-2">
+            <span>Day 1: Arrival &amp; Ravi Valley Villa Check-in</span>
+            <span class="material-symbols-outlined text-antique-gold text-title-md" aria-hidden="true">check_circle</span>
+          </li>
+          <li class="bg-primary-container rounded-md p-3 flex items-center justify-between gap-2">
+            <span>Day 2: Lakshmi Narayan Temple &amp; Rumal Atelier</span>
+            <span class="material-symbols-outlined text-antique-gold text-title-md" aria-hidden="true">check_circle</span>
+          </li>
+        </ul>
+
+        <div class="pt-gutter-sm space-y-2">
+          <button id="save-trip-btn" type="button" class="w-full rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal font-body text-label-lg py-3 transition-colors">
+            Save Trip to Account
+          </button>
+          <p id="save-trip-msg" class="hidden font-body text-body-sm text-antique-gold text-center" role="status">
+            Trip saved in demo session. Sign in to sync across devices.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bg-deep-teal text-pure-white py-gutter-lg border-t border-pure-white/15">
+    <div class="max-w-7xl mx-auto px-gutter-md md:px-page-margin flex flex-col sm:flex-row items-center justify-between gap-gutter-md text-body-sm text-pure-white/75">
+      <a href="../homepage/Homepage.html" class="font-headline text-title-md tracking-[0.16em] text-pure-white">AARVIKA</a>
+      <p>© 2026 AARVIKA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var list = document.getElementById('itinerary-list');
+      var addBtns = document.querySelectorAll('.add-item-btn');
+      addBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var label = btn.getAttribute('data-add');
+          var li = document.createElement('li');
+          li.className = 'bg-primary-container rounded-md p-3 flex items-center justify-between gap-2';
+          li.innerHTML = '<span>' + label + '</span><span class="material-symbols-outlined text-antique-gold text-title-md" aria-hidden="true">check_circle</span>';
+          list.appendChild(li);
+          btn.textContent = 'Added';
+          btn.disabled = true;
+          btn.classList.add('opacity-60');
+        });
+      });
+
+      var saveBtn = document.getElementById('save-trip-btn');
+      var saveMsg = document.getElementById('save-trip-msg');
+      if (saveBtn && saveMsg) {
+        saveBtn.addEventListener('click', function () {
+          saveMsg.classList.remove('hidden');
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

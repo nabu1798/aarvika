@@ -1,0 +1,713 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AARVIKA — Travel · Explore · Experience</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="36f5747f7abc35db===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-teal': '#063B42',
+        'warm-ivory': '#F7F2E9',
+        'antique-gold': '#D8A64E',
+        'antique-gold-hover': '#C4923B',
+        'charcoal': '#202B2D',
+        'pure-white': '#FFFFFF',
+        'primary': '#063B42',
+        'on-primary': '#FFFFFF',
+        'primary-container': '#1F4D54',
+        'on-primary-container': '#F7F2E9',
+        'secondary': '#D8A64E',
+        'on-secondary': '#202B2D',
+        'secondary-container': '#FFEED9',
+        'on-secondary-container': '#422C00',
+        'surface': '#F7F2E9',
+        'on-surface': '#202B2D',
+        'surface-container-lowest': '#FFFFFF',
+        'surface-container-low': '#FAF7F1',
+        'surface-container': '#EFE9DD',
+        'surface-container-high': '#E7E2D9',
+        'on-surface-variant': '#494740',
+        'outline': '#949089',
+        'outline-variant': '#CAC6BE',
+        'success': '#1E6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#9A6F1B',
+        'on-warning': '#FFFFFF',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-md': '48px',
+        'section-lg': '64px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Playfair Display"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'title': ['"Manrope"', 'sans-serif'],
+        'body': ['"Manrope"', 'sans-serif'],
+        'label': ['"Manrope"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['60px', { lineHeight: '66px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md': ['44px', { lineHeight: '50px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'headline-md': ['26px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.8px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '1.2px', fontWeight: '600' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '250ms',
+        'card-zoom': '400ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'card-zoom': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'card-zoom': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+    .chamba-slice {
+      clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+    }
+    @media (max-width: 1023px) {
+      .chamba-slice {
+        clip-path: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen antialiased selection:bg-antique-gold/30">
+
+  <!-- HERO + NAVIGATION -->
+  <div class="relative bg-deep-teal overflow-hidden">
+    <!-- Hero Background Photo -->
+    <div class="absolute inset-0">
+      <img src="https://lh3.googleusercontent.com/aida/ALJJyrC8Kn62UPG9gwZWPs0s5hocQd20A2tDgDJ3r7j7VSsV1vq0NgYA7vmhjQsXtY9Omp1VacBzJ3x2eGNDCIIDgylgi-BfeepNaUj6SNbUjcbxvX2ut3mW0j5XXeQuTWYQcV0Vk89A5gsVcXyVyeIYV0V2LQC3iV5h7JWUc4cqbUUfRSliAhvpJWQMLXf82_E67szcaOAuDqHt-EbeF9jQCY2S_ySmXEZRj7FbM7VbHb8xAa_SjO6gTgFkGIFXng" alt="Chamba Himalayan valley at sunrise with ancient pagoda temple and winding river" class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-gradient-to-r from-deep-teal/95 via-deep-teal/70 to-deep-teal/20"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-deep-teal/75 via-transparent to-deep-teal/35"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <header class="relative z-30 max-w-7xl mx-auto px-gutter-md md:px-page-margin pt-gutter-lg pb-gutter-md">
+      <div class="flex items-center justify-between gap-gutter-md">
+        <!-- Exact AARVIKA Logo -->
+        <a href="Homepage.html" class="inline-flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-antique-gold rounded-sm" aria-label="AARVIKA Home">
+          <svg class="w-24 h-7 mb-0.5" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 32L38 14L50 22L66 4L84 21L94 15L112 32H88L66 13L48 27L38 20L20 32H10Z" fill="#D8A64E"></path>
+            <path d="M66 4L74 16L66 13L56 21L66 4Z" fill="#FFEED9" opacity="0.65"></path>
+            <path d="M38 14L44 21L38 20L29 26L38 14Z" fill="#FFEED9" opacity="0.45"></path>
+          </svg>
+          <span class="font-headline text-title-lg tracking-widest text-pure-white leading-none">AARVIKA</span>
+          <span class="font-body text-[9px] tracking-[0.26em] text-pure-white/85 uppercase mt-1">TRAVEL · EXPLORE · EXPERIENCE</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-gutter-lg" aria-label="Primary navigation">
+          <div class="relative group">
+            <a href="../explore-destinations/ExploreDestinations.html" class="inline-flex items-center gap-1 font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors duration-state-change py-2">
+              <span data-design-text-token="label-lg">Explore</span>
+              <span class="material-symbols-outlined text-body-lg opacity-80" aria-hidden="true">expand_more</span>
+            </a>
+            <div class="hidden group-hover:block absolute left-0 top-full w-56 rounded-md bg-pure-white shadow-xl border border-outline-variant/40 py-2 z-50">
+              <a href="../explore-destinations/ExploreDestinations.html" class="block px-gutter-md py-2 text-body-md text-charcoal hover:bg-surface-container-low">All Destinations</a>
+              <a href="../discover-chamba/DiscoverChamba.html" class="block px-gutter-md py-2 text-body-md text-charcoal hover:bg-surface-container-low">Discover Chamba</a>
+              <a href="../explore-destinations/ExploreDestinations.html?region=himalayas" class="block px-gutter-md py-2 text-body-md text-charcoal hover:bg-surface-container-low">Himalayan Retreats</a>
+              <a href="../explore-destinations/ExploreDestinations.html?region=coastal" class="block px-gutter-md py-2 text-body-md text-charcoal hover:bg-surface-container-low">Coastal &amp; Heritage</a>
+            </div>
+          </div>
+
+          <a href="../stays-listing/StaysListing.html" class="inline-flex items-center gap-1 font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors duration-state-change py-2">
+            <span data-design-text-token="label-lg">Stays</span>
+            <span class="material-symbols-outlined text-body-lg opacity-80" aria-hidden="true">expand_more</span>
+          </a>
+
+          <a href="../explore-destinations/ExploreDestinations.html?tab=packages" class="inline-flex items-center gap-1 font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors duration-state-change py-2">
+            <span data-design-text-token="label-lg">Packages</span>
+            <span class="material-symbols-outlined text-body-lg opacity-80" aria-hidden="true">expand_more</span>
+          </a>
+
+          <a href="../discover-chamba/DiscoverChamba.html#experiences" class="inline-flex items-center gap-1 font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors duration-state-change py-2">
+            <span data-design-text-token="label-lg">Experiences</span>
+            <span class="material-symbols-outlined text-body-lg opacity-80" aria-hidden="true">expand_more</span>
+          </a>
+
+          <a href="../trip-planner/TripPlanner.html" class="inline-flex items-center gap-1 font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors duration-state-change py-2">
+            <span data-design-text-token="label-lg">Plan Your Trip</span>
+            <span class="material-symbols-outlined text-body-lg opacity-80" aria-hidden="true">expand_more</span>
+          </a>
+        </nav>
+
+        <!-- Right Actions -->
+        <div class="hidden lg:flex items-center gap-gutter-md">
+          <span class="h-5 w-px bg-pure-white/30" aria-hidden="true"></span>
+          <a href="../sign-in/SignIn.html" class="inline-flex items-center gap-gutter-xs font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors duration-state-change px-2 py-1.5">
+            <span class="material-symbols-outlined text-title-lg" aria-hidden="true">account_circle</span>
+            <span data-design-text-token="label-lg">Sign In</span>
+          </a>
+          <!-- COMPONENT: button-primary -->
+          <a href="../explore-destinations/ExploreDestinations.html" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal px-gutter-lg py-2.5 transition-colors duration-state-change shadow-md">
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Start Exploring</span>
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-pure-white/30 text-pure-white hover:bg-pure-white/10">
+          <span class="material-symbols-outlined text-headline-sm" aria-hidden="true">menu</span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden mt-gutter-md rounded-lg bg-deep-teal/95 border border-pure-white/15 p-gutter-md space-y-2 shadow-xl">
+        <a href="../explore-destinations/ExploreDestinations.html" class="block px-3 py-2 rounded-sm text-pure-white hover:bg-primary-container font-body text-label-lg">Explore Destinations</a>
+        <a href="../stays-listing/StaysListing.html" class="block px-3 py-2 rounded-sm text-pure-white hover:bg-primary-container font-body text-label-lg">Stays &amp; Homestays</a>
+        <a href="../explore-destinations/ExploreDestinations.html?tab=packages" class="block px-3 py-2 rounded-sm text-pure-white hover:bg-primary-container font-body text-label-lg">Curated Packages</a>
+        <a href="../discover-chamba/DiscoverChamba.html" class="block px-3 py-2 rounded-sm text-pure-white hover:bg-primary-container font-body text-label-lg">Discover Chamba</a>
+        <a href="../trip-planner/TripPlanner.html" class="block px-3 py-2 rounded-sm text-pure-white hover:bg-primary-container font-body text-label-lg">Plan Your Trip</a>
+        <div class="pt-2 border-t border-pure-white/15 flex items-center justify-between gap-2">
+          <a href="../sign-in/SignIn.html" class="inline-flex items-center gap-2 text-pure-white font-body text-label-lg px-3 py-2">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">account_circle</span>
+            <span>Sign In</span>
+          </a>
+          <a href="../explore-destinations/ExploreDestinations.html" class="rounded-full bg-antique-gold text-charcoal px-4 py-2 font-body text-label-lg">Start Exploring</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Content -->
+    <section class="relative z-20 max-w-7xl mx-auto px-gutter-md md:px-page-margin pt-8 pb-28 md:pt-12 md:pb-36">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-gutter-xs mb-gutter-md">
+          <span class="material-symbols-outlined text-antique-gold text-title-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">location_on</span>
+          <span data-design-text-token="label-md" class="font-body text-label-md uppercase tracking-[0.16em] text-antique-gold">CHAMBA, HIMACHAL PRADESH</span>
+        </div>
+
+        <h1 data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-pure-white text-balance mb-gutter-md">
+          The World Is<br>
+          Yours to <span class="text-antique-gold">Discover.</span>
+        </h1>
+
+        <p data-design-text-token="body-lg" class="font-body text-body-lg text-pure-white/90 max-w-md text-pretty mb-gutter-lg">
+          Discover stays, journeys and local experiences across breathtaking destinations.
+        </p>
+
+        <div class="w-14 h-0.5 bg-antique-gold rounded-full" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Organic Curved Bottom Transition into Warm Ivory -->
+    <div class="relative z-10 w-full leading-none pointer-events-none">
+      <svg class="w-full h-12 md:h-20" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0,16 C360,84 1080,84 1440,16 L1440,80 L0,80 Z" fill="#F7F2E9"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- FLOATING SEARCH PANEL -->
+  <section class="relative z-30 max-w-4xl mx-auto px-gutter-md -mt-20 md:-mt-24 mb-section-md">
+    <div data-component-id="tabs-with-icon" data-component-type="tabs" data-component-variant="with-icon">
+      <!-- Search Tabs -->
+      <div class="flex justify-center">
+        <div role="tablist" aria-label="Search travel services" class="inline-flex flex-wrap bg-pure-white rounded-t-md shadow-md overflow-hidden border border-b-0 border-outline-variant/30">
+          <button type="button" role="tab" id="search-tab-stays" aria-selected="true" data-search-tab="stays" class="search-tab inline-flex items-center gap-gutter-sm px-gutter-md md:px-gutter-lg py-3 bg-deep-teal text-pure-white transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">bed</span>
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Stays</span>
+          </button>
+          <button type="button" role="tab" id="search-tab-packages" aria-selected="false" data-search-tab="packages" class="search-tab inline-flex items-center gap-gutter-sm px-gutter-md md:px-gutter-lg py-3 bg-pure-white text-charcoal hover:bg-surface-container-low transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">flight</span>
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Packages</span>
+          </button>
+          <button type="button" role="tab" id="search-tab-experiences" aria-selected="false" data-search-tab="experiences" class="search-tab inline-flex items-center gap-gutter-sm px-gutter-md md:px-gutter-lg py-3 bg-pure-white text-charcoal hover:bg-surface-container-low transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">photo_camera</span>
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Experiences</span>
+          </button>
+          <button type="button" role="tab" id="search-tab-transport" aria-selected="false" data-search-tab="transport" class="search-tab inline-flex items-center gap-gutter-sm px-gutter-md md:px-gutter-lg py-3 bg-pure-white text-charcoal hover:bg-surface-container-low transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">directions_car</span>
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Transport</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Search Form Card -->
+      <form id="hero-search-form" class="bg-pure-white rounded-lg shadow-xl border border-outline-variant/30 p-gutter-md md:p-3">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-gutter-sm md:gap-0">
+          <!-- Field 1: Destination / Pickup -->
+          <div class="md:col-span-4 flex items-center gap-gutter-sm px-gutter-md py-2 md:border-r border-outline-variant/40">
+            <span class="material-symbols-outlined text-deep-teal text-title-lg shrink-0" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">location_on</span>
+            <div class="w-full">
+              <label for="search-field-1" id="search-label-1" class="sr-only">Destination</label>
+              <select id="search-field-1" class="w-full border-0 bg-transparent p-0 pr-6 font-body text-body-md font-medium text-charcoal focus:ring-0 cursor-pointer">
+                <option value="chamba">Destination: Chamba, HP</option>
+                <option value="himachal">Himachal Paradise</option>
+                <option value="kashmir">Serene Kashmir</option>
+                <option value="goa">Goa Beaches</option>
+                <option value="rajasthan">Royal Rajasthan</option>
+                <option value="kerala">Enchanting Kerala</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Field 2: Dates / Category / Drop -->
+          <div class="md:col-span-4 flex items-center gap-gutter-sm px-gutter-md py-2 md:border-r border-outline-variant/40">
+            <span id="search-icon-2" class="material-symbols-outlined text-deep-teal text-title-lg shrink-0" aria-hidden="true">calendar_month</span>
+            <div class="w-full">
+              <label for="search-field-2" id="search-label-2" class="sr-only">Dates</label>
+              <select id="search-field-2" class="w-full border-0 bg-transparent p-0 pr-6 font-body text-body-md font-medium text-charcoal focus:ring-0 cursor-pointer">
+                <option value="nov-14">14 Nov – 18 Nov 2026</option>
+                <option value="dec-05">05 Dec – 09 Dec 2026</option>
+                <option value="dec-22">22 Dec – 27 Dec 2026</option>
+                <option value="flexible">Flexible Dates</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Field 3: Guests / Travellers / Participants -->
+          <div class="md:col-span-2 flex items-center gap-gutter-sm px-gutter-md py-2">
+            <span class="material-symbols-outlined text-deep-teal text-title-lg shrink-0" aria-hidden="true">person</span>
+            <div class="w-full">
+              <label for="search-field-3" id="search-label-3" class="sr-only">Guests</label>
+              <select id="search-field-3" class="w-full border-0 bg-transparent p-0 pr-4 font-body text-body-md font-medium text-charcoal focus:ring-0 cursor-pointer">
+                <option value="2">2 Guests</option>
+                <option value="1">1 Guest</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="6">6+ Group</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Search Submit Button -->
+          <div class="md:col-span-2 flex justify-end">
+            <button type="submit" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="w-full inline-flex items-center justify-center gap-gutter-xs rounded-md bg-antique-gold hover:bg-antique-gold-hover text-pure-white px-gutter-md py-3 transition-colors duration-state-change shadow-sm">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">search</span>
+              <span data-design-text-token="label-lg" class="font-body text-label-lg">Search</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FIND YOUR NEXT SOMEWHERE -->
+  <section class="max-w-7xl mx-auto px-gutter-md md:px-page-margin pb-section-lg">
+    <div class="text-center max-w-2xl mx-auto mb-gutter-xl">
+      <div class="inline-flex items-center gap-gutter-md mb-gutter-sm">
+        <span class="w-10 h-px bg-antique-gold/60" aria-hidden="true"></span>
+        <span data-design-text-token="label-md" class="font-body text-label-md uppercase tracking-widest text-deep-teal">EXPLORE MORE</span>
+        <span class="w-10 h-px bg-antique-gold/60" aria-hidden="true"></span>
+      </div>
+      <h2 data-design-text-token="display-md" class="font-headline text-display-md-mobile md:text-display-md text-charcoal mb-gutter-sm">
+        Find your next <em class="italic font-normal">somewhere</em>
+      </h2>
+      <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant">
+        From serene hill towns to vibrant cultures, discover destinations that inspire.
+      </p>
+    </div>
+
+    <!-- 5 Destination Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter-md items-stretch">
+      <!-- Card 1: Himachal Paradise -->
+      <a href="../discover-chamba/DiscoverChamba.html" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group relative block h-72 md:h-80 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrDJ9ZgGjgTPim3OP0TeeFvA0XWdp2Po8V2n_8UPg6oYhBZ6TmKn7Clp9nN9B9MP5etVKWbxb9e3kHA-oiw7C9SOHkkMLbOB6VGKEbVN3t3lSSgNr3p3XsGAMS-UohWJED2UAR1DB7heIoa37xAI02ixGtecDjYNwmNm6o37ux0EyiNE5f50yrBANFa3KqMzFGxg0hQe2voUt9_m7KGbmAQ7dCiTwCxySS3Jn0kv2osYbW3dlHlrBeA" alt="Himachal Paradise mountain village and snow peaks" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white leading-snug">Himachal<br>Paradise</h3>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-antique-gold text-pure-white shrink-0 group-hover:bg-antique-gold-hover transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Card 2: Serene Kashmir -->
+      <a href="../explore-destinations/ExploreDestinations.html?dest=kashmir" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group relative block h-72 md:h-80 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrCYgelpa9GdvHyGyPLvrK92F3OkavcOSxMLJaNphe-y5n5tCVBj_P_XooMG_-Qaihf7VNdc9nC08VSEJozoanrzTo0P_BWfB5YUzP5-UlTPiMGvhItY12nkFXwqGks5JUMrx6MFQgMvvggsVYYQ_OIX3-6RkJSnY0EdjhK9O0p9_xx8P83Bi7CB6xkqmAVKsS3KeTHW0yfyxFjtNzFhVdGd8J7ZIuNSvzTl5_Y89HPoaLp1k2nrvQ" alt="Serene Kashmir wooden houseboats on Dal Lake" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white leading-snug">Serene<br>Kashmir</h3>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-antique-gold text-pure-white shrink-0 group-hover:bg-antique-gold-hover transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Card 3: Goa Beaches -->
+      <a href="../explore-destinations/ExploreDestinations.html?dest=goa" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group relative block h-72 md:h-80 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrDEMIyWLgcMx3RlwZUvxlTu-QabtYfw63NggZXCjtV01f_zmu_AOY_-9kzccMoBche162OP5sq_fDACuBUt-9E5WwDjI9oia9w4L4Xbjv12qfhJrZwlnkZEzVgtTM3Y0aKgZl7I7SLmEdKwxxU_Aekml4TEv0eNQt3MjmZAxUz2Xws8Jj5wTZ4rr7dkn6gGyJ38E-xA-o7Uvfa7lEGuTpEwqSn-GG7NI8dwC3OGaT4MLoLk" alt="Goa Beaches palm-lined golden shoreline" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white leading-snug">Goa<br>Beaches</h3>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-antique-gold text-pure-white shrink-0 group-hover:bg-antique-gold-hover transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Card 4: Royal Rajasthan -->
+      <a href="../explore-destinations/ExploreDestinations.html?dest=rajasthan" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group relative block h-72 md:h-80 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrDHShxhE1f9T-pWybJC_UIf214-Dv2YxZclOe26QEoBJuTINzaEL8JtUKA0qVAli1PSCGrr-0DaZCbDB4wGJz4vYUhKDtqPFmf2K_4DOX93ldNynWSJy3Jvt33aW3qNNEpe76h8ZkGh5LWzLlQJEsbjbGa3Nkv5GmJaac5ireXTYrdfjDOEfLUkMN4Fm6m9suD6jgS_lyOHEPcyCzaVmafrPQn1xSKX9a-f2YxM6Om3AsUncURuscttdQ" alt="Royal Rajasthan sandstone palace fort at sunset" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white leading-snug">Royal<br>Rajasthan</h3>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-antique-gold text-pure-white shrink-0 group-hover:bg-antique-gold-hover transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Card 5: Enchanting Kerala -->
+      <a href="../explore-destinations/ExploreDestinations.html?dest=kerala" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="group relative block h-72 md:h-80 rounded-lg overflow-hidden shadow-md sm:col-span-2 lg:col-span-1">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrBvz_1SoFsdJNccN1uD541fEKEry91hLxd6luiL2vHTV-d-O1EaJkgOK9KIlOU6csaYr8qlRBN6hAQIxxWWiZqP9nDSagJHPPPvSDIVtGnoswMuLSE5qj8ZALcO4VivfggBOACUhTwFkUOR_cbG3qvrbD5dKrjw28Oxr8m7iw1M4ky2Gn2PMZTPhSLCfr8B1PtpoouJL-SlYqCCWDS_d2DsHGp79PwSwgxCJgnQhe6oWeoTKVg" alt="Enchanting Kerala misty emerald tea hills" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white leading-snug">Enchanting<br>Kerala</h3>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-antique-gold text-pure-white shrink-0 group-hover:bg-antique-gold-hover transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- DISCOVER CHAMBA CULTURAL SHOWCASE -->
+  <section class="bg-deep-teal text-pure-white overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 items-stretch">
+      <!-- Left Editorial Copy -->
+      <div class="lg:col-span-5 px-gutter-md md:px-page-margin py-section-md md:py-section-lg flex flex-col justify-center">
+        <div class="inline-flex items-center gap-gutter-sm mb-gutter-md">
+          <span class="w-6 h-px bg-antique-gold" aria-hidden="true"></span>
+          <span data-design-text-token="label-md" class="font-body text-label-md uppercase tracking-[0.16em] text-antique-gold">OUR ROOTS, OUR PRIDE</span>
+          <span class="w-6 h-px bg-antique-gold" aria-hidden="true"></span>
+        </div>
+
+        <h2 data-design-text-token="display-md" class="font-headline text-display-md-mobile md:text-display-md text-pure-white leading-tight mb-gutter-md">
+          Discover<br>
+          <span class="text-antique-gold">Chamba</span>
+        </h2>
+
+        <p data-design-text-token="body-lg" class="font-body text-body-lg text-pure-white/85 max-w-sm text-pretty mb-gutter-xl">
+          A land of rich culture, ancient temples and vibrant traditions.
+        </p>
+
+        <div>
+          <a href="../discover-chamba/DiscoverChamba.html" class="inline-flex items-center gap-gutter-sm rounded-full border border-pure-white/50 hover:border-antique-gold hover:bg-antique-gold hover:text-charcoal text-pure-white px-gutter-lg py-2.5 transition-colors duration-state-change">
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Explore Chamba</span>
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right 4-Panel Angled Cultural Collage -->
+      <div class="lg:col-span-7 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-0 min-h-[280px] lg:min-h-[340px] p-gutter-md lg:p-0">
+        <a href="../discover-chamba/DiscoverChamba.html#temples" class="chamba-slice relative overflow-hidden lg:-ml-4 group" aria-label="Chamba Ancient Temples">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCk2cqiqmNlD2LB1ev4yNJVItV9J_odXmpLCLa4YBJA7LGxMbttyvU_wmA-zfheLbYIXk-yjdMYeF4fCtYKC4Wz0hvVy82Oz5p1egb2QVONroKFKxel-hKPYhsh5QnaTqJgZo1u5831eF401hXS99EL6N3g573mYNtAAqB-ur89vuP5deyssxbknj-jvVeCxicKynh4mmXFSEyVS2KXCoyf-vXkvSeTJ_ZuEqzdSFu8nD6r4YglyIc" alt="Ancient stone temple in Chamba" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+          <div class="absolute inset-0 border-r-2 border-pure-white/80 pointer-events-none hidden lg:block"></div>
+        </a>
+        <a href="../discover-chamba/DiscoverChamba.html#rumal" class="chamba-slice relative overflow-hidden lg:-ml-4 group" aria-label="Chamba Rumal Embroidery">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrBXUq4gOpwpRJMnPim6-Jz05BpAgJ5yaKkeNrVnBKhtNLS8YaMDAN7T4swpO40Fw5Oeq7lUDZyt5I6tZNBlT_rBe79d84EoxbKGA_ffDnrrCYjgkQigT2Og0m6oVr3H_180qQ3OueP2bf0C_aszAC-TAKfujQPpyqc9q0OLzvyJf69iQ3xAmNc9ZhZtxvh1ym6sYPB4KgJwLmeggyDyeTCrn2tG4vJTgl3dmk1n1xxfjhrXEE9bwQ" alt="Traditional Chamba Rumal hand embroidery" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+          <div class="absolute inset-0 border-r-2 border-pure-white/80 pointer-events-none hidden lg:block"></div>
+        </a>
+        <a href="../discover-chamba/DiscoverChamba.html#minjar" class="chamba-slice relative overflow-hidden lg:-ml-4 group" aria-label="Minjar Mela Procession">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCIPk86M74jT1tJS0mB3wjlk0WNKixZ7Zh1ZBv_oJ1nI1zRd3-w8SnqsPn1Pkm7VTl500tko8Acu_2js31M958hBl7wG68ZAbIQ4v-L0G0-TK6GMIgecTjZIRe4CL8_urjUg6mc4RC4Uyy0l4qOKYb7hqqjRY5mK3eGniupy8YHRoOe_TL6FdYmYTWJC87muoTlbkK9rwfcBALL9qgD17AWjDxe4qEg7vMCie2g-f_y6Y7ShzbZP-fv" alt="Minjar Mela cultural procession in Chamba" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+          <div class="absolute inset-0 border-r-2 border-pure-white/80 pointer-events-none hidden lg:block"></div>
+        </a>
+        <a href="../discover-chamba/DiscoverChamba.html#culture" class="chamba-slice relative overflow-hidden lg:-ml-4 group" aria-label="Chamba Folk Traditions">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCF7OuutfcAtqvJvhXUAY63ZwO5mV7Kf3aqXHK66cq8AEm8Vst4Y_HHmGxx02__wnpQgihVYCWNTw3MuFjvgwAosPNF2vv4esUD31gnygIVnxuXEfnWuxsuiWuc9Q6m1FKeooyTiGFCsSvc8TeH0ywsFNUUw-vkOBpT73Mu-CaeWc3n1rlJAc7YQyGQY-mIXJ98711FKUWv6ICoCRbHqhvXyKQ13roKJK6JuaIXKYr-rgfBre8Hs-cHlg" alt="Traditional Himachali folk dancers in Chamba" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-CARD ECOSYSTEM SECTION -->
+  <section class="max-w-7xl mx-auto px-gutter-md md:px-page-margin py-section-md md:py-section-lg">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-md items-stretch">
+      <!-- Ecosystem 1: Featured Stays -->
+      <a href="../stays-listing/StaysListing.html" class="group relative block h-56 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrAguP6NCstlXRkhSAtTCL7myqXPYiGC7VOs124lOyM-p1CqgLprq0mjWoMUsTzi-tLV96TeH83DflAIx2sitvWswS8DwuMLQpOEJp6uMhJbqY-x9zdVCj13DFoEBiFMiZJO87ZzfKCGJPCxGfa0RrJREstxD8ctPI7JG8LVynHWJ1TaTJ9BvHaSxwclXWomNXKwaPkxRRpcdowBj7ga7Q7nQPzGHWYOYJbXs9BTb6H76gRni11_mw_2VVkhjw" alt="Featured Stays mountain-view bedroom" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/35 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <div>
+            <span class="material-symbols-outlined text-antique-gold text-title-lg mb-1 block" aria-hidden="true">cottage</span>
+            <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white">Featured Stays</h3>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-pure-white/85">Stay in comfort, live the view</p>
+          </div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-pure-white/60 text-pure-white group-hover:bg-antique-gold group-hover:border-antique-gold group-hover:text-charcoal transition-colors duration-state-change shrink-0">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Ecosystem 2: Curated Journeys -->
+      <a href="../explore-destinations/ExploreDestinations.html?tab=packages" class="group relative block h-56 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrCwUzRkS3KvbLX0zM0WFFzXUdci6MmuryFj9suHsj2Z1ZvGsMNZtuAOW_2NyvUjB-a3N4OsHqAelx-gUbeT5FlMi2yl4WFz-4SLose-l3F45WE7YjDdohKnKWxuviDZfWFtEiA_6GXg29O8X9k0yiEMKrSxG_R7GWRza2O01eX4rUNXigGFLwPi7_3BUQtZpRS0O5jXOZ3AxCcK2Oxc59eIZVwAh_XsdMnY9JDIlQg8cGd6_YtdToSox9Rm6h3kJQ" alt="Curated Journeys winding Himalayan highway" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/35 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <div>
+            <span class="material-symbols-outlined text-antique-gold text-title-lg mb-1 block" aria-hidden="true">route</span>
+            <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white">Curated Journeys</h3>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-pure-white/85">Handpicked itineraries</p>
+          </div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-pure-white/60 text-pure-white group-hover:bg-antique-gold group-hover:border-antique-gold group-hover:text-charcoal transition-colors duration-state-change shrink-0">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Ecosystem 3: Local Experiences -->
+      <a href="../discover-chamba/DiscoverChamba.html#experiences" class="group relative block h-56 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrCLB7zwuWK2cFtJQdu-ZJUDCnemiVdDuWvgcdD42vsh6npEOXYgH77Yci49fKgYI1WVg76pFffULfAwhf4rj4bCDI4VBer59XnvvgxImuKa7oofPfxv_X6CiBpAgA0rqsGhU5oSgoZZv7gjHAqvbbaXqaCXbJO2qyQGXBPCo4B-5D7aNk1Pwm0n1vzijjWY8BSh7Fl3zOZF0a9kpbt3YnXvAV6yMFMSy5dgyTkqq-ZXqIzc6OJ8Fb7oOmckRJYrE18" alt="Local Experiences river kayaking in the Himalayas" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/35 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <div>
+            <span class="material-symbols-outlined text-antique-gold text-title-lg mb-1 block" aria-hidden="true">kayaking</span>
+            <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white">Local Experiences</h3>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-pure-white/85">Feel the local vibes</p>
+          </div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-pure-white/60 text-pure-white group-hover:bg-antique-gold group-hover:border-antique-gold group-hover:text-charcoal transition-colors duration-state-change shrink-0">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Ecosystem 4: Trip Planner -->
+      <a href="../trip-planner/TripPlanner.html" class="group relative block h-56 rounded-lg overflow-hidden shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrBYM1s6JXK0eOvtYv82W73nwwZlsh6jBSEAP8Oqj3SyQyZteg4mvccRUdSt-_bmkTEupP2Eii8bwybdOvn-xZoAMHYP9u1xTSA82B-LtJlfRGBNbAS2N61ZBokxdtV9EF6O0JjueD7sv82YxocVJ_g3duVYRtnYFYU8YPO3zodfIRPBby2wZ2zjUsUzJjvIPPM01aaGsuM91Lj2u3TrKGm5opjf8Mlw-956GqhwytTGhqSWZ9J7aVleGTGt" alt="Trip Planner travel journal and brass compass" class="w-full h-full object-cover transition-transform duration-card-zoom group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/35 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-gutter-md flex items-end justify-between gap-2">
+          <div>
+            <span class="material-symbols-outlined text-antique-gold text-title-lg mb-1 block" aria-hidden="true">event_note</span>
+            <h3 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-pure-white">Trip Planner</h3>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-pure-white/85">Plan your perfect trip</p>
+          </div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-pure-white/60 text-pure-white group-hover:bg-antique-gold group-hover:border-antique-gold group-hover:text-charcoal transition-colors duration-state-change shrink-0">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- PREMIUM BRANDED FOOTER -->
+  <footer class="relative bg-deep-teal text-pure-white overflow-hidden">
+    <!-- Subtle Himalayan Ridge Silhouette -->
+    <svg class="absolute bottom-0 inset-x-0 w-full h-28 opacity-15 pointer-events-none" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120L0 85L160 40L310 78L480 28L670 82L850 18L1040 72L1220 34L1440 78L1440 120Z" fill="#001F24"></path>
+    </svg>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-gutter-md md:px-page-margin pt-section-md pb-gutter-xl">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-gutter-xl pb-gutter-xl border-b border-pure-white/15">
+        <!-- Footer Brand Logo -->
+        <a href="Homepage.html" class="inline-flex flex-col items-center lg:border-r lg:border-pure-white/15 lg:pr-gutter-xl" aria-label="AARVIKA Home">
+          <svg class="w-24 h-7 mb-0.5" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 32L38 14L50 22L66 4L84 21L94 15L112 32H88L66 13L48 27L38 20L20 32H10Z" fill="#D8A64E"></path>
+            <path d="M66 4L74 16L66 13L56 21L66 4Z" fill="#FFEED9" opacity="0.65"></path>
+          </svg>
+          <span class="font-headline text-title-lg tracking-[0.18em] text-pure-white leading-none">AARVIKA</span>
+          <span class="font-body text-[9px] tracking-[0.26em] text-pure-white/80 uppercase mt-1">TRAVEL · EXPLORE · EXPERIENCE</span>
+        </a>
+
+        <!-- Newsletter -->
+        <div class="flex flex-col md:flex-row items-center gap-gutter-md flex-1 justify-center">
+          <div class="text-center md:text-left">
+            <h4 data-design-text-token="title-md" class="font-body text-title-md text-pure-white">Join Our Travel Community</h4>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-pure-white/75">Get inspired. Plan better. Travel more.</p>
+          </div>
+          <form id="newsletter-form" class="flex items-center bg-pure-white rounded-full p-1 pl-gutter-md w-full max-w-sm shadow-md">
+            <label for="newsletter-email" class="sr-only text-charcoal">Your email address</label>
+            <input id="newsletter-email" type="email" required placeholder="Your email address" class="w-full border-0 bg-transparent text-body-md text-charcoal placeholder:text-outline focus:ring-0 py-1.5">
+            <button type="submit" class="rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal font-body text-label-lg px-gutter-lg py-2 transition-colors duration-state-change shrink-0">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-gutter-sm lg:border-l lg:border-pure-white/15 lg:pl-gutter-xl">
+          <a href="#instagram" aria-label="AARVIKA on Instagram" class="social-link w-9 h-9 rounded-full border border-pure-white/40 hover:border-antique-gold hover:text-antique-gold inline-flex items-center justify-center transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">photo_camera</span>
+          </a>
+          <a href="#youtube" aria-label="AARVIKA on YouTube" class="social-link w-9 h-9 rounded-full border border-pure-white/40 hover:border-antique-gold hover:text-antique-gold inline-flex items-center justify-center transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">play_arrow</span>
+          </a>
+          <a href="#facebook" aria-label="AARVIKA on Facebook" class="social-link w-9 h-9 rounded-full border border-pure-white/40 hover:border-antique-gold hover:text-antique-gold inline-flex items-center justify-center transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">public</span>
+          </a>
+          <a href="#pinterest" aria-label="AARVIKA on Pinterest" class="social-link w-9 h-9 rounded-full border border-pure-white/40 hover:border-antique-gold hover:text-antique-gold inline-flex items-center justify-center transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">bookmark</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Newsletter Feedback Toast -->
+      <p id="newsletter-status" class="hidden text-center text-body-sm text-antique-gold pt-gutter-sm" role="status"></p>
+
+      <!-- Bottom Legal & Links Row -->
+      <div class="pt-gutter-lg flex flex-col md:flex-row items-center justify-between gap-gutter-md text-body-sm text-pure-white/75">
+        <div class="hidden md:block w-32" aria-hidden="true"></div>
+        <nav aria-label="Footer navigation" class="flex flex-wrap items-center justify-center gap-x-gutter-md gap-y-1">
+          <a href="../explore-destinations/ExploreDestinations.html#about" class="hover:text-antique-gold transition-colors">About Us</a>
+          <span class="text-pure-white/30">|</span>
+          <a href="../explore-destinations/ExploreDestinations.html" class="hover:text-antique-gold transition-colors">Destinations</a>
+          <span class="text-pure-white/30">|</span>
+          <a href="../discover-chamba/DiscoverChamba.html" class="hover:text-antique-gold transition-colors">Travel Guides</a>
+          <span class="text-pure-white/30">|</span>
+          <a href="../trip-planner/TripPlanner.html#help" class="hover:text-antique-gold transition-colors">Help</a>
+          <span class="text-pure-white/30">|</span>
+          <a href="../sign-in/SignIn.html#terms" class="hover:text-antique-gold transition-colors">Terms &amp; Conditions</a>
+          <span class="text-pure-white/30">|</span>
+          <a href="../sign-in/SignIn.html#privacy" class="hover:text-antique-gold transition-colors">Privacy Policy</a>
+        </nav>
+        <p class="font-body text-body-sm text-pure-white/75">© 2026 AARVIKA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var mobileBtn = document.getElementById('mobile-menu-btn');
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', function () {
+          var isHidden = mobileMenu.classList.toggle('hidden');
+          mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+        });
+      }
+
+      var tabConfig = {
+        stays: {
+          field1: ['Destination: Chamba, HP', 'Himachal Paradise', 'Serene Kashmir', 'Goa Beaches', 'Royal Rajasthan', 'Enchanting Kerala'],
+          field2: ['14 Nov – 18 Nov 2026', '05 Dec – 09 Dec 2026', '22 Dec – 27 Dec 2026', 'Flexible Dates'],
+          field3: ['2 Guests', '1 Guest', '3 Guests', '4 Guests', '6+ Group'],
+          icon2: 'calendar_month',
+          target: '../stays-listing/StaysListing.html'
+        },
+        packages: {
+          field1: ['Package: Chamba & Khajjiar', 'Kashmir Valley Circuit', 'Royal Rajasthan Heritage', 'Kerala Backwaters & Hills'],
+          field2: ['5 Days · Nov 2026', '7 Days · Dec 2026', '4 Days · Jan 2027'],
+          field3: ['2 Travellers', '1 Traveller', '4 Travellers', 'Family (5+)'],
+          icon2: 'calendar_month',
+          target: '../explore-destinations/ExploreDestinations.html?tab=packages'
+        },
+        experiences: {
+          field1: ['Chamba, Himachal Pradesh', 'Dharamshala & Kangra', 'Srinagar, Kashmir', 'Udaipur, Rajasthan'],
+          field2: ['Heritage & Temples', 'Chamba Rumal Craft', 'River & Mountain Trails', 'Culinary Walks'],
+          field3: ['2 Participants', '1 Participant', '4 Participants', 'Private Group'],
+          icon2: 'category',
+          target: '../discover-chamba/DiscoverChamba.html#experiences'
+        },
+        transport: {
+          field1: ['Pickup: Pathankot / Gaggal Airport', 'Pickup: Chandigarh', 'Pickup: Chamba Town', 'Pickup: Dalhousie'],
+          field2: ['Drop: Chamba Valley', 'Drop: Khajjiar Meadow', 'Drop: Bharmour', 'Drop: Dharamshala'],
+          field3: ['2 Passengers', '4 Passengers (SUV)', '6 Passengers (Tempo)'],
+          icon2: 'pin_drop',
+          target: '../trip-planner/TripPlanner.html?tab=transport'
+        }
+      };
+
+      var activeTab = 'stays';
+      var tabs = document.querySelectorAll('.search-tab');
+      var f1 = document.getElementById('search-field-1');
+      var f2 = document.getElementById('search-field-2');
+      var f3 = document.getElementById('search-field-3');
+      var icon2 = document.getElementById('search-icon-2');
+
+      function populateSelect(selectEl, items) {
+        selectEl.innerHTML = '';
+        items.forEach(function (label, idx) {
+          var opt = document.createElement('option');
+          opt.value = 'opt-' + idx;
+          opt.textContent = label;
+          selectEl.appendChild(opt);
+        });
+      }
+
+      tabs.forEach(function (tabBtn) {
+        tabBtn.addEventListener('click', function () {
+          activeTab = tabBtn.getAttribute('data-search-tab');
+          tabs.forEach(function (t) {
+            var isSelected = t === tabBtn;
+            t.setAttribute('aria-selected', String(isSelected));
+            t.classList.toggle('bg-deep-teal', isSelected);
+            t.classList.toggle('text-pure-white', isSelected);
+            t.classList.toggle('bg-pure-white', !isSelected);
+            t.classList.toggle('text-charcoal', !isSelected);
+          });
+          var cfg = tabConfig[activeTab];
+          if (cfg) {
+            populateSelect(f1, cfg.field1);
+            populateSelect(f2, cfg.field2);
+            populateSelect(f3, cfg.field3);
+            if (icon2) icon2.textContent = cfg.icon2;
+          }
+        });
+      });
+
+      var searchForm = document.getElementById('hero-search-form');
+      if (searchForm) {
+        searchForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var cfg = tabConfig[activeTab] || tabConfig.stays;
+          window.location.href = cfg.target;
+        });
+      }
+
+      var newsletterForm = document.getElementById('newsletter-form');
+      var newsletterStatus = document.getElementById('newsletter-status');
+      if (newsletterForm && newsletterStatus) {
+        newsletterForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var emailInput = document.getElementById('newsletter-email');
+          newsletterStatus.textContent = 'Thank you for joining the AARVIKA Travel Community (' + emailInput.value + ').';
+          newsletterStatus.classList.remove('hidden');
+          emailInput.value = '';
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Destinations — AARVIKA</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="36f5747f7abc35db===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-teal': '#063B42',
+        'warm-ivory': '#F7F2E9',
+        'antique-gold': '#D8A64E',
+        'antique-gold-hover': '#C4923B',
+        'charcoal': '#202B2D',
+        'pure-white': '#FFFFFF',
+        'primary': '#063B42',
+        'on-primary': '#FFFFFF',
+        'primary-container': '#1F4D54',
+        'on-primary-container': '#F7F2E9',
+        'secondary': '#D8A64E',
+        'on-secondary': '#202B2D',
+        'secondary-container': '#FFEED9',
+        'on-secondary-container': '#422C00',
+        'surface': '#F7F2E9',
+        'on-surface': '#202B2D',
+        'surface-container-lowest': '#FFFFFF',
+        'surface-container-low': '#FAF7F1',
+        'surface-container': '#EFE9DD',
+        'surface-container-high': '#E7E2D9',
+        'on-surface-variant': '#494740',
+        'outline': '#949089',
+        'outline-variant': '#CAC6BE',
+        'success': '#1E6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#9A6F1B',
+        'on-warning': '#FFFFFF',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-md': '48px',
+        'section-lg': '64px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Playfair Display"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'title': ['"Manrope"', 'sans-serif'],
+        'body': ['"Manrope"', 'sans-serif'],
+        'label': ['"Manrope"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['60px', { lineHeight: '66px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md': ['44px', { lineHeight: '50px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'headline-md': ['26px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.8px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '1.2px', fontWeight: '600' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '250ms',
+        'card-zoom': '400ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'card-zoom': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'card-zoom': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+
+  <!-- Shared AARVIKA Header -->
+  <header class="bg-deep-teal text-pure-white sticky top-0 z-30 shadow-md">
+    <div class="max-w-7xl mx-auto px-gutter-md md:px-page-margin py-gutter-md flex items-center justify-between gap-gutter-md">
+      <a href="../homepage/Homepage.html" class="inline-flex flex-col items-center" aria-label="AARVIKA Home">
+        <svg class="w-20 h-6 mb-0.5" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 32L38 14L50 22L66 4L84 21L94 15L112 32H88L66 13L48 27L38 20L20 32H10Z" fill="#D8A64E"></path>
+        </svg>
+        <span class="font-headline text-title-md tracking-widest text-pure-white leading-none">AARVIKA</span>
+        <span class="font-body text-[8px] tracking-[0.24em] text-pure-white/80 uppercase mt-0.5">TRAVEL · EXPLORE · EXPERIENCE</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-gutter-lg" aria-label="Primary navigation">
+        <a href="ExploreDestinations.html" aria-current="page" class="font-body text-label-lg text-antique-gold py-1 border-b-2 border-antique-gold">Explore</a>
+        <a href="../stays-listing/StaysListing.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Stays</a>
+        <a href="ExploreDestinations.html?tab=packages" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Packages</a>
+        <a href="../discover-chamba/DiscoverChamba.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Discover Chamba</a>
+        <a href="../trip-planner/TripPlanner.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Plan Your Trip</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-gutter-md">
+        <a href="../sign-in/SignIn.html" class="inline-flex items-center gap-1.5 font-body text-label-lg text-pure-white hover:text-antique-gold">
+          <span class="material-symbols-outlined text-title-lg" aria-hidden="true">account_circle</span>
+          <span>Sign In</span>
+        </a>
+        <a href="../trip-planner/TripPlanner.html" class="inline-flex items-center gap-1.5 rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal font-body text-label-lg px-gutter-lg py-2 transition-colors">
+          <span>Build Trip</span>
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-gutter-md md:px-page-margin py-section-md">
+    <!-- Page Hero Header -->
+    <section class="mb-gutter-xl">
+      <span data-design-text-token="label-md" class="font-body text-label-md uppercase tracking-widest text-deep-teal block mb-gutter-xs">DESTINATION DISCOVERY</span>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter-md">
+        <div>
+          <h1 data-design-text-token="display-md" class="font-headline text-display-md-mobile md:text-display-md text-charcoal mb-gutter-xs">Explore Destinations &amp; Journeys</h1>
+          <p data-design-text-token="body-lg" class="font-body text-body-lg text-on-surface-variant max-w-2xl">Curated Himalayan valleys, coastal sanctuaries, and heritage circuits with vetted stays and local hosts.</p>
+        </div>
+        <!-- Search Filter Input -->
+        <div class="w-full md:w-80">
+          <label for="dest-search" class="sr-only">Filter destinations</label>
+          <div class="relative flex items-center">
+            <span class="material-symbols-outlined absolute left-3 text-deep-teal text-title-lg" aria-hidden="true">search</span>
+            <input id="dest-search" type="search" placeholder="Search Chamba, Kashmir, Kerala..." class="w-full rounded-full border border-outline-variant bg-pure-white pl-10 pr-4 py-2.5 text-body-md text-charcoal placeholder:text-outline focus:border-deep-teal focus:ring-1 focus:ring-deep-teal">
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center gap-gutter-sm mt-gutter-lg" role="group" aria-label="Destination categories">
+        <button type="button" data-filter="all" class="filter-pill rounded-full bg-deep-teal text-pure-white px-gutter-md py-2 font-body text-label-lg transition-colors">All Destinations</button>
+        <button type="button" data-filter="himalayas" class="filter-pill rounded-full bg-pure-white border border-outline-variant text-charcoal hover:border-deep-teal px-gutter-md py-2 font-body text-label-lg transition-colors">Himalayas</button>
+        <button type="button" data-filter="heritage" class="filter-pill rounded-full bg-pure-white border border-outline-variant text-charcoal hover:border-deep-teal px-gutter-md py-2 font-body text-label-lg transition-colors">Heritage &amp; Culture</button>
+        <button type="button" data-filter="coastal" class="filter-pill rounded-full bg-pure-white border border-outline-variant text-charcoal hover:border-deep-teal px-gutter-md py-2 font-body text-label-lg transition-colors">Coastal &amp; Nature</button>
+      </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section id="destinations-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-lg mb-section-lg items-stretch">
+      <!-- Chamba -->
+      <article data-category="himalayas heritage" data-name="chamba himachal paradise" class="dest-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDJ9ZgGjgTPim3OP0TeeFvA0XWdp2Po8V2n_8UPg6oYhBZ6TmKn7Clp9nN9B9MP5etVKWbxb9e3kHA-oiw7C9SOHkkMLbOB6VGKEbVN3t3lSSgNr3p3XsGAMS-UohWJED2UAR1DB7heIoa37xAI02ixGtecDjYNwmNm6o37ux0EyiNE5f50yrBANFa3KqMzFGxg0hQe2voUt9_m7KGbmAQ7dCiTwCxySS3Jn0kv2osYbW3dlHlrBeA" alt="Chamba and Himachal Paradise" class="w-full h-full object-cover">
+          <span class="absolute top-3 left-3 rounded-full bg-deep-teal/90 text-antique-gold px-3 py-1 font-body text-label-sm uppercase">Signature Region</span>
+        </div>
+        <div class="p-gutter-lg flex-1 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <h2 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-charcoal mb-1">Chamba &amp; Himachal Paradise</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant mb-gutter-sm">Ancient Shikhara temples, Khajjiar meadows, Chamba Rumal craft ateliers, and heritage timber stays.</p>
+            <div class="flex flex-wrap gap-2 text-body-sm text-deep-teal font-medium">
+              <span class="bg-surface px-2.5 py-1 rounded-sm">18 Stays</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">6 Packages</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">12 Experiences</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-outline-variant/30">
+            <span class="font-body text-body-sm text-on-surface-variant">From <strong class="text-charcoal tabular-nums">₹6,800</strong> / night</span>
+            <a href="../discover-chamba/DiscoverChamba.html" class="inline-flex items-center gap-1 rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal px-4 py-2 font-body text-label-lg transition-colors">
+              <span>Explore</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kashmir -->
+      <article data-category="himalayas" data-name="serene kashmir dal lake srinagar" class="dest-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrCYgelpa9GdvHyGyPLvrK92F3OkavcOSxMLJaNphe-y5n5tCVBj_P_XooMG_-Qaihf7VNdc9nC08VSEJozoanrzTo0P_BWfB5YUzP5-UlTPiMGvhItY12nkFXwqGks5JUMrx6MFQgMvvggsVYYQ_OIX3-6RkJSnY0EdjhK9O0p9_xx8P83Bi7CB6xkqmAVKsS3KeTHW0yfyxFjtNzFhVdGd8J7ZIuNSvzTl5_Y89HPoaLp1k2nrvQ" alt="Serene Kashmir Dal Lake" class="w-full h-full object-cover">
+          <span class="absolute top-3 left-3 rounded-full bg-deep-teal/90 text-pure-white px-3 py-1 font-body text-label-sm uppercase">Himalayas</span>
+        </div>
+        <div class="p-gutter-lg flex-1 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <h2 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-charcoal mb-1">Serene Kashmir</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant mb-gutter-sm">Cedar houseboats on Dal Lake, Pahalgam alpine valleys, and curated saffron-trail homestays.</p>
+            <div class="flex flex-wrap gap-2 text-body-sm text-deep-teal font-medium">
+              <span class="bg-surface px-2.5 py-1 rounded-sm">14 Stays</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">5 Packages</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">9 Experiences</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-outline-variant/30">
+            <span class="font-body text-body-sm text-on-surface-variant">From <strong class="text-charcoal tabular-nums">₹9,200</strong> / night</span>
+            <a href="../stays-listing/StaysListing.html" class="inline-flex items-center gap-1 rounded-full bg-deep-teal hover:bg-primary-container text-pure-white px-4 py-2 font-body text-label-lg transition-colors">
+              <span>View Stays</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Goa -->
+      <article data-category="coastal" data-name="goa beaches coastal" class="dest-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDEMIyWLgcMx3RlwZUvxlTu-QabtYfw63NggZXCjtV01f_zmu_AOY_-9kzccMoBche162OP5sq_fDACuBUt-9E5WwDjI9oia9w4L4Xbjv12qfhJrZwlnkZEzVgtTM3Y0aKgZl7I7SLmEdKwxxU_Aekml4TEv0eNQt3MjmZAxUz2Xws8Jj5wTZ4rr7dkn6gGyJ38E-xA-o7Uvfa7lEGuTpEwqSn-GG7NI8dwC3OGaT4MLoLk" alt="Goa Beaches" class="w-full h-full object-cover">
+          <span class="absolute top-3 left-3 rounded-full bg-deep-teal/90 text-pure-white px-3 py-1 font-body text-label-sm uppercase">Coastal</span>
+        </div>
+        <div class="p-gutter-lg flex-1 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <h2 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-charcoal mb-1">Goa Beaches &amp; Latin Quarter</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant mb-gutter-sm">Portuguese heritage villas in Fontainhas, quiet South Goa coves, and spice plantation tours.</p>
+            <div class="flex flex-wrap gap-2 text-body-sm text-deep-teal font-medium">
+              <span class="bg-surface px-2.5 py-1 rounded-sm">22 Stays</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">4 Packages</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-outline-variant/30">
+            <span class="font-body text-body-sm text-on-surface-variant">From <strong class="text-charcoal tabular-nums">₹7,500</strong> / night</span>
+            <a href="../stays-listing/StaysListing.html" class="inline-flex items-center gap-1 rounded-full bg-deep-teal hover:bg-primary-container text-pure-white px-4 py-2 font-body text-label-lg transition-colors">
+              <span>View Stays</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Rajasthan -->
+      <article data-category="heritage" data-name="royal rajasthan udaipur jaipur" class="dest-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrDHShxhE1f9T-pWybJC_UIf214-Dv2YxZclOe26QEoBJuTINzaEL8JtUKA0qVAli1PSCGrr-0DaZCbDB4wGJz4vYUhKDtqPFmf2K_4DOX93ldNynWSJy3Jvt33aW3qNNEpe76h8ZkGh5LWzLlQJEsbjbGa3Nkv5GmJaac5ireXTYrdfjDOEfLUkMN4Fm6m9suD6jgS_lyOHEPcyCzaVmafrPQn1xSKX9a-f2YxM6Om3AsUncURuscttdQ" alt="Royal Rajasthan" class="w-full h-full object-cover">
+          <span class="absolute top-3 left-3 rounded-full bg-deep-teal/90 text-pure-white px-3 py-1 font-body text-label-sm uppercase">Heritage</span>
+        </div>
+        <div class="p-gutter-lg flex-1 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <h2 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-charcoal mb-1">Royal Rajasthan</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant mb-gutter-sm">Restored havelis, hilltop sandstone forts, desert astronomy evenings, and royal culinary trails.</p>
+            <div class="flex flex-wrap gap-2 text-body-sm text-deep-teal font-medium">
+              <span class="bg-surface px-2.5 py-1 rounded-sm">16 Stays</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">7 Packages</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-outline-variant/30">
+            <span class="font-body text-body-sm text-on-surface-variant">From <strong class="text-charcoal tabular-nums">₹11,000</strong> / night</span>
+            <a href="../stays-listing/StaysListing.html" class="inline-flex items-center gap-1 rounded-full bg-deep-teal hover:bg-primary-container text-pure-white px-4 py-2 font-body text-label-lg transition-colors">
+              <span>View Stays</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kerala -->
+      <article data-category="coastal" data-name="enchanting kerala munnar backwaters" class="dest-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrBvz_1SoFsdJNccN1uD541fEKEry91hLxd6luiL2vHTV-d-O1EaJkgOK9KIlOU6csaYr8qlRBN6hAQIxxWWiZqP9nDSagJHPPPvSDIVtGnoswMuLSE5qj8ZALcO4VivfggBOACUhTwFkUOR_cbG3qvrbD5dKrjw28Oxr8m7iw1M4ky2Gn2PMZTPhSLCfr8B1PtpoouJL-SlYqCCWDS_d2DsHGp79PwSwgxCJgnQhe6oWeoTKVg" alt="Enchanting Kerala Tea Hills" class="w-full h-full object-cover">
+          <span class="absolute top-3 left-3 rounded-full bg-deep-teal/90 text-pure-white px-3 py-1 font-body text-label-sm uppercase">Nature</span>
+        </div>
+        <div class="p-gutter-lg flex-1 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <h2 data-design-text-token="headline-sm" class="font-headline text-headline-sm text-charcoal mb-1">Enchanting Kerala</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant mb-gutter-sm">Misty Munnar tea estates, private kettuvallam backwater cruises, and Ayurvedic wellness retreats.</p>
+            <div class="flex flex-wrap gap-2 text-body-sm text-deep-teal font-medium">
+              <span class="bg-surface px-2.5 py-1 rounded-sm">19 Stays</span>
+              <span class="bg-surface px-2.5 py-1 rounded-sm">5 Packages</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-outline-variant/30">
+            <span class="font-body text-body-sm text-on-surface-variant">From <strong class="text-charcoal tabular-nums">₹8,400</strong> / night</span>
+            <a href="../stays-listing/StaysListing.html" class="inline-flex items-center gap-1 rounded-full bg-deep-teal hover:bg-primary-container text-pure-white px-4 py-2 font-body text-label-lg transition-colors">
+              <span>View Stays</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Curated Holiday Packages Section -->
+    <section id="packages" class="bg-deep-teal text-pure-white rounded-xl p-gutter-xl">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-gutter-md mb-gutter-lg">
+        <div>
+          <span class="font-body text-label-md uppercase tracking-[0.16em] text-antique-gold block mb-1">CURATED JOURNEYS</span>
+          <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg text-pure-white">Signature Holiday Packages</h2>
+        </div>
+        <a href="../trip-planner/TripPlanner.html" class="inline-flex items-center gap-2 rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal px-gutter-lg py-2.5 font-body text-label-lg transition-colors self-start">
+          <span>Customise in Trip Planner</span>
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+        <div class="bg-primary-container rounded-lg p-gutter-lg border border-pure-white/15 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <span class="font-body text-label-sm uppercase text-secondary-container">5 Days · 4 Nights</span>
+            <h3 class="font-headline text-headline-sm text-pure-white mt-1 mb-2">Chamba, Khajjiar &amp; Bharmour Circuit</h3>
+            <p class="font-body text-body-md text-pure-white/80">Includes heritage homestay, Chamba Rumal workshop, temple heritage walk, and private mountain SUV.</p>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-pure-white/15">
+            <span class="font-body text-title-lg text-secondary-container tabular-nums">₹28,500 <span class="text-body-sm text-pure-white/70">/ person</span></span>
+            <a href="../discover-chamba/DiscoverChamba.html" class="font-body text-label-lg text-pure-white underline hover:text-secondary-container">View Itinerary</a>
+          </div>
+        </div>
+
+        <div class="bg-primary-container rounded-lg p-gutter-lg border border-pure-white/15 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <span class="font-body text-label-sm uppercase text-secondary-container">6 Days · 5 Nights</span>
+            <h3 class="font-headline text-headline-sm text-pure-white mt-1 mb-2">Kashmir Lakes &amp; Alpine Meadows</h3>
+            <p class="font-body text-body-md text-pure-white/80">2 nights luxury houseboat, 3 nights Gulmarg boutique chalet, shikara sunrise, and Wazwan dining.</p>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-pure-white/15">
+            <span class="font-body text-title-lg text-secondary-container tabular-nums">₹42,000 <span class="text-body-sm text-pure-white/70">/ person</span></span>
+            <a href="../trip-planner/TripPlanner.html" class="font-body text-label-lg text-pure-white underline hover:text-secondary-container">Plan Now</a>
+          </div>
+        </div>
+
+        <div class="bg-primary-container rounded-lg p-gutter-lg border border-pure-white/15 flex flex-col justify-between gap-gutter-md">
+          <div>
+            <span class="font-body text-label-sm uppercase text-secondary-container">4 Days · 3 Nights</span>
+            <h3 class="font-headline text-headline-sm text-pure-white mt-1 mb-2">Munnar Mist &amp; Backwater Retreat</h3>
+            <p class="font-body text-body-md text-pure-white/80">Tea estate bungalow, private backwater cruise, spice garden walk, and airport transfers.</p>
+          </div>
+          <div class="flex items-center justify-between pt-gutter-sm border-t border-pure-white/15">
+            <span class="font-body text-title-lg text-secondary-container tabular-nums">₹31,200 <span class="text-body-sm text-pure-white/70">/ person</span></span>
+            <a href="../trip-planner/TripPlanner.html" class="font-body text-label-lg text-pure-white underline hover:text-secondary-container">Plan Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-deep-teal text-pure-white py-gutter-lg border-t border-pure-white/15">
+    <div class="max-w-7xl mx-auto px-gutter-md md:px-page-margin flex flex-col sm:flex-row items-center justify-between gap-gutter-md text-body-sm text-pure-white/75">
+      <a href="../homepage/Homepage.html" class="font-headline text-title-md tracking-[0.16em] text-pure-white">AARVIKA</a>
+      <p>© 2026 AARVIKA. International standards. Himalayan soul.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var pills = document.querySelectorAll('.filter-pill');
+      var cards = document.querySelectorAll('.dest-card');
+      var searchInput = document.getElementById('dest-search');
+      var activeFilter = 'all';
+
+      function applyFilters() {
+        var q = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        cards.forEach(function (card) {
+          var cats = card.getAttribute('data-category') || '';
+          var name = card.getAttribute('data-name') || '';
+          var matchesCat = activeFilter === 'all' || cats.indexOf(activeFilter) !== -1;
+          var matchesQuery = !q || name.indexOf(q) !== -1;
+          card.classList.toggle('hidden', !(matchesCat && matchesQuery));
+        });
+      }
+
+      pills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          activeFilter = pill.getAttribute('data-filter');
+          pills.forEach(function (p) {
+            var selected = p === pill;
+            p.classList.toggle('bg-deep-teal', selected);
+            p.classList.toggle('text-pure-white', selected);
+            p.classList.toggle('bg-pure-white', !selected);
+            p.classList.toggle('text-charcoal', !selected);
+            p.classList.toggle('border', !selected);
+            p.classList.toggle('border-outline-variant', !selected);
+          });
+          applyFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', applyFilters);
+      }
+    })();
+  </script>
+
+
+</body></html>

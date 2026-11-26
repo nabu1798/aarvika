@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stays &amp; Homestays — AARVIKA</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="36f5747f7abc35db===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'deep-teal': '#063B42',
+        'warm-ivory': '#F7F2E9',
+        'antique-gold': '#D8A64E',
+        'antique-gold-hover': '#C4923B',
+        'charcoal': '#202B2D',
+        'pure-white': '#FFFFFF',
+        'primary': '#063B42',
+        'on-primary': '#FFFFFF',
+        'primary-container': '#1F4D54',
+        'on-primary-container': '#F7F2E9',
+        'secondary': '#D8A64E',
+        'on-secondary': '#202B2D',
+        'secondary-container': '#FFEED9',
+        'on-secondary-container': '#422C00',
+        'surface': '#F7F2E9',
+        'on-surface': '#202B2D',
+        'surface-container-lowest': '#FFFFFF',
+        'surface-container-low': '#FAF7F1',
+        'surface-container': '#EFE9DD',
+        'surface-container-high': '#E7E2D9',
+        'on-surface-variant': '#494740',
+        'outline': '#949089',
+        'outline-variant': '#CAC6BE',
+        'success': '#1E6B52',
+        'on-success': '#FFFFFF',
+        'warning': '#9A6F1B',
+        'on-warning': '#FFFFFF',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-md': '48px',
+        'section-lg': '64px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Playfair Display"', 'sans-serif'],
+        'headline': ['"Playfair Display"', 'sans-serif'],
+        'title': ['"Manrope"', 'sans-serif'],
+        'body': ['"Manrope"', 'sans-serif'],
+        'label': ['"Manrope"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['60px', { lineHeight: '66px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md': ['44px', { lineHeight: '50px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'headline-md': ['26px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-sm': ['20px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.8px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '1.2px', fontWeight: '600' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '250ms',
+        'card-zoom': '400ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'card-zoom': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'card-zoom': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+
+  <header class="bg-deep-teal text-pure-white sticky top-0 z-30 shadow-md">
+    <div class="max-w-7xl mx-auto px-gutter-md md:px-page-margin py-gutter-md flex items-center justify-between gap-gutter-md">
+      <a href="../homepage/Homepage.html" class="inline-flex flex-col items-center" aria-label="AARVIKA Home">
+        <svg class="w-20 h-6 mb-0.5" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 32L38 14L50 22L66 4L84 21L94 15L112 32H88L66 13L48 27L38 20L20 32H10Z" fill="#D8A64E"></path>
+        </svg>
+        <span class="font-headline text-title-md tracking-widest text-pure-white leading-none">AARVIKA</span>
+        <span class="font-body text-[8px] tracking-[0.24em] text-pure-white/80 uppercase mt-0.5">TRAVEL · EXPLORE · EXPERIENCE</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-gutter-lg" aria-label="Primary navigation">
+        <a href="../explore-destinations/ExploreDestinations.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Explore</a>
+        <a href="StaysListing.html" aria-current="page" class="font-body text-label-lg text-antique-gold py-1 border-b-2 border-antique-gold">Stays</a>
+        <a href="../explore-destinations/ExploreDestinations.html?tab=packages" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Packages</a>
+        <a href="../discover-chamba/DiscoverChamba.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Discover Chamba</a>
+        <a href="../trip-planner/TripPlanner.html" class="font-body text-label-lg text-pure-white hover:text-antique-gold transition-colors">Plan Your Trip</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-gutter-md">
+        <a href="../sign-in/SignIn.html" class="inline-flex items-center gap-1.5 font-body text-label-lg text-pure-white hover:text-antique-gold">
+          <span class="material-symbols-outlined text-title-lg" aria-hidden="true">account_circle</span>
+          <span>Sign In</span>
+        </a>
+        <a href="../explore-destinations/ExploreDestinations.html" class="inline-flex items-center gap-1.5 rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal font-body text-label-lg px-gutter-lg py-2 transition-colors">
+          <span>Start Exploring</span>
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-gutter-md md:px-page-margin py-section-md">
+    <!-- Listing Header + Filters -->
+    <section class="mb-gutter-xl">
+      <span class="font-body text-label-md uppercase tracking-widest text-deep-teal block mb-1">FEATURED ACCOMMODATIONS</span>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter-md">
+        <div>
+          <h1 data-design-text-token="display-md" class="font-headline text-display-md-mobile md:text-display-md text-charcoal">Handpicked Stays &amp; Homestays</h1>
+          <p class="font-body text-body-md text-on-surface-variant">14 Nov – 18 Nov 2026 · 2 Guests · Verified Himalayan &amp; Heritage Properties</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button type="button" data-type="all" class="stay-filter rounded-full bg-deep-teal text-pure-white px-4 py-2 font-body text-label-lg">All Types</button>
+          <button type="button" data-type="homestay" class="stay-filter rounded-full bg-pure-white border border-outline-variant text-charcoal px-4 py-2 font-body text-label-lg">Heritage Homestay</button>
+          <button type="button" data-type="boutique" class="stay-filter rounded-full bg-pure-white border border-outline-variant text-charcoal px-4 py-2 font-body text-label-lg">Boutique Hotel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stays Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-lg items-stretch">
+      <!-- Stay 1 -->
+      <article data-stay-type="homestay" class="stay-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAWB6FvK1exeQhzr9iL1wGEo0xywPxfPZ0EXOv7eegoyKNlzdI6t69_hU5oNVfsRcDb70nkiVfzNzwo8Uf5GlGcxh9YnkDH0jy5Xfjnhgc3p86TiulYgsAE0U-JWVxH7bkWSr0BthpLMfFWiNPpaVKWA_mm_-Ctf4o-xDxLTFXY62HCQ49eAwd-68fUtZuK6F4F2lquwBe7A0VfYn01599EJqgfwyBjRuN962dn8_WsgJoOXZO6ck4_Hmg" alt="Ravi Valley Heritage Timber Villa" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 rounded-full bg-deep-teal text-antique-gold px-3 py-1 font-body text-label-sm uppercase">Heritage Homestay</span>
+          </div>
+          <div class="p-gutter-lg">
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <span class="font-body text-body-sm text-deep-teal font-semibold">Chamba, Himachal Pradesh</span>
+              <span class="inline-flex items-center gap-1 font-body text-label-md text-charcoal">
+                <span class="material-symbols-outlined text-antique-gold text-title-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                4.9 (42)
+              </span>
+            </div>
+            <h2 class="font-headline text-headline-sm text-charcoal mb-2">Ravi Valley Heritage Timber Villa</h2>
+            <p class="font-body text-body-md text-on-surface-variant">Deodar-wood veranda overlooking the Ravi river, home-cooked Himachali breakfast, and mountain fireplace.</p>
+          </div>
+        </div>
+        <div class="px-gutter-lg pb-gutter-lg pt-gutter-sm border-t border-outline-variant/30 flex items-center justify-between">
+          <div>
+            <span class="font-body text-title-lg text-deep-teal tabular-nums font-bold">₹8,900</span>
+            <span class="font-body text-body-sm text-on-surface-variant">/ night</span>
+          </div>
+          <a href="../property-details/PropertyDetails.html" class="rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal px-5 py-2 font-body text-label-lg transition-colors">View Property</a>
+        </div>
+      </article>
+
+      <!-- Stay 2 -->
+      <article data-stay-type="boutique" class="stay-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrAguP6NCstlXRkhSAtTCL7myqXPYiGC7VOs124lOyM-p1CqgLprq0mjWoMUsTzi-tLV96TeH83DflAIx2sitvWswS8DwuMLQpOEJp6uMhJbqY-x9zdVCj13DFoEBiFMiZJO87ZzfKCGJPCxGfa0RrJREstxD8ctPI7JG8LVynHWJ1TaTJ9BvHaSxwclXWomNXKwaPkxRRpcdowBj7ga7Q7nQPzGHWYOYJbXs9BTb6H76gRni11_mw_2VVkhjw" alt="Khajjiar Cedar Ridge Chalet" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 rounded-full bg-deep-teal text-pure-white px-3 py-1 font-body text-label-sm uppercase">Boutique Hotel</span>
+          </div>
+          <div class="p-gutter-lg">
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <span class="font-body text-body-sm text-deep-teal font-semibold">Khajjiar, Himachal Pradesh</span>
+              <span class="inline-flex items-center gap-1 font-body text-label-md text-charcoal">
+                <span class="material-symbols-outlined text-antique-gold text-title-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                4.8 (67)
+              </span>
+            </div>
+            <h2 class="font-headline text-headline-sm text-charcoal mb-2">Khajjiar Cedar Ridge Chalet</h2>
+            <p class="font-body text-body-md text-on-surface-variant">Panoramic glass-walled mountain suites bordering cedar forests with guided meadow walks.</p>
+          </div>
+        </div>
+        <div class="px-gutter-lg pb-gutter-lg pt-gutter-sm border-t border-outline-variant/30 flex items-center justify-between">
+          <div>
+            <span class="font-body text-title-lg text-deep-teal tabular-nums font-bold">₹12,400</span>
+            <span class="font-body text-body-sm text-on-surface-variant">/ night</span>
+          </div>
+          <a href="../property-details/PropertyDetails.html" class="rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal px-5 py-2 font-body text-label-lg transition-colors">View Property</a>
+        </div>
+      </article>
+
+      <!-- Stay 3 -->
+      <article data-stay-type="homestay" class="stay-card bg-pure-white rounded-lg overflow-hidden shadow-md border border-outline-variant/30 flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrCYgelpa9GdvHyGyPLvrK92F3OkavcOSxMLJaNphe-y5n5tCVBj_P_XooMG_-Qaihf7VNdc9nC08VSEJozoanrzTo0P_BWfB5YUzP5-UlTPiMGvhItY12nkFXwqGks5JUMrx6MFQgMvvggsVYYQ_OIX3-6RkJSnY0EdjhK9O0p9_xx8P83Bi7CB6xkqmAVKsS3KeTHW0yfyxFjtNzFhVdGd8J7ZIuNSvzTl5_Y89HPoaLp1k2nrvQ" alt="Zabarwan Heritage Houseboat" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 rounded-full bg-deep-teal text-antique-gold px-3 py-1 font-body text-label-sm uppercase">Heritage Homestay</span>
+          </div>
+          <div class="p-gutter-lg">
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <span class="font-body text-body-sm text-deep-teal font-semibold">Dal Lake, Kashmir</span>
+              <span class="inline-flex items-center gap-1 font-body text-label-md text-charcoal">
+                <span class="material-symbols-outlined text-antique-gold text-title-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                4.9 (54)
+              </span>
+            </div>
+            <h2 class="font-headline text-headline-sm text-charcoal mb-2">Zabarwan Carved Walnut Houseboat</h2>
+            <p class="font-body text-body-md text-on-surface-variant">Hand-carved walnut wood staterooms with private shikara deck and Kahwa tea service.</p>
+          </div>
+        </div>
+        <div class="px-gutter-lg pb-gutter-lg pt-gutter-sm border-t border-outline-variant/30 flex items-center justify-between">
+          <div>
+            <span class="font-body text-title-lg text-deep-teal tabular-nums font-bold">₹10,800</span>
+            <span class="font-body text-body-sm text-on-surface-variant">/ night</span>
+          </div>
+          <a href="../property-details/PropertyDetails.html" class="rounded-full bg-antique-gold hover:bg-antique-gold-hover text-charcoal px-5 py-2 font-body text-label-lg transition-colors">View Property</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="bg-deep-teal text-pure-white py-gutter-lg border-t border-pure-white/15">
+    <div class="max-w-7xl mx-auto px-gutter-md md:px-page-margin flex flex-col sm:flex-row items-center justify-between gap-gutter-md text-body-sm text-pure-white/75">
+      <a href="../homepage/Homepage.html" class="font-headline text-title-md tracking-[0.16em] text-pure-white">AARVIKA</a>
+      <p>© 2026 AARVIKA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('.stay-filter');
+      var cards = document.querySelectorAll('.stay-card');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var t = btn.getAttribute('data-type');
+          buttons.forEach(function (b) {
+            var active = b === btn;
+            b.classList.toggle('bg-deep-teal', active);
+            b.classList.toggle('text-pure-white', active);
+            b.classList.toggle('bg-pure-white', !active);
+            b.classList.toggle('text-charcoal', !active);
+            b.classList.toggle('border', !active);
+            b.classList.toggle('border-outline-variant', !active);
+          });
+          cards.forEach(function (c) {
+            var show = t === 'all' || c.getAttribute('data-stay-type') === t;
+            c.classList.toggle('hidden', !show);
+          });
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>
